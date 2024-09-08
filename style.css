@@ -1129,3 +1129,37 @@ img {vertical-align: middle;}
   border-radius: 0.5rem;
   transition: opacity 0.3s;
 }
+
+
+.project-carousel {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.carousel-container {
+  display: flex;
+  gap: 20px;
+}
+
+.carousel-item {
+  cursor: pointer;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.carousel-item:hover {
+  transform: scale(1.05);
+}
+
+h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
