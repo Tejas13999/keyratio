@@ -70,7 +70,7 @@ html {
   width: 0.7rem;
   height: 0.7rem;
   border-radius: 50%;
-  background-color: #c29525;
+  background-color: #614c18;
   margin: -0.4rem 0 0 -0.4rem;
 }
 
@@ -210,7 +210,7 @@ html {
   left: 5rem;
   width: 10rem;
   height: 4rem;
-  background-color: #e2b646;
+  background-color: #614c18;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,7 +232,7 @@ html {
   content: "";
   position: absolute;
   border-left: 1rem solid transparent;
-  border-right: 1rem solid #e2b646;
+  border-right: 1rem solid #614c18;
   border-bottom: 1rem solid transparent;
   border-top: 1rem solid transparent;
   top: 50%;
@@ -294,7 +294,7 @@ html {
 .banner p {
   font-family: "Josefin Slab", serif;
   font-size: 4rem;
-  color: #fff;
+  color: #c2bfbf;
   width: 70%;
   letter-spacing: 0.1rem;
   margin-bottom: 3rem;
@@ -306,7 +306,7 @@ html {
 .banner button {
   width: 25rem;
   height: 7rem;
-  background-color: #c29525;
+  background-color: #614c18;
   border: none;
   font-family: "Muli", serif;
   font-size: 2rem;
@@ -367,7 +367,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  color: #c29525;
+  color: #614c18;
   width: 0;
   overflow: hidden;
   white-space: nowrap;
@@ -401,7 +401,7 @@ html {
 }
 
 .social-media i:hover {
-  background-color: #c29525;
+  background-color: #614c18;
 }
 
 .about-us {
@@ -428,7 +428,7 @@ html {
 .underline {
   width: 12rem;
   height: 0.3rem;
-  background-color: #c29525;
+  background-color: #614c18;
 }
 
 .services {
@@ -524,7 +524,7 @@ html {
 .cards-wrapper {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 8rem;
+  /* margin-top: 8rem; */
   width: 100%;
 }
 
@@ -601,7 +601,7 @@ html {
 .card-info button {
   width: 10rem;
   height: 3rem;
-  background-color: #c29525;
+  background-color: #614c18;
   border: none;
   font-family: "Baloo Da 2", serif;
   font-size: 1.4rem;
@@ -712,7 +712,7 @@ html {
 .submit-btn {
   width: 45rem;
   height: 5rem;
-  background-color: #c29525;
+  background-color: #614c18;
   color: #fff;
   border: none;
   margin-top: 2rem;
@@ -762,7 +762,7 @@ html {
   bottom: 5rem;
   width: 4.5rem;
   height: 4.5rem;
-  background-color: #e2b646;
+  background-color: #614c18;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -783,7 +783,7 @@ html {
 
   .contact-wrapper {
     width: 80%;
-    height: 65rem;
+    height: 75rem;
   }
 
   .footer-content {
@@ -853,7 +853,7 @@ html {
 
   .contact-wrapper {
     width: 90%;
-    height: 55rem;
+    height: 60rem;
   }
 
   .contact-heading {
@@ -977,4 +977,33 @@ html {
   .footer {
     height: 18rem;
   }
+}
+
+#home-b .features-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  #home-b .features-container div {
+    background: #ddd;
+    padding: 5rem; }
+    #home-b .features-container div:nth-child(even) {
+      background: #f6f6f6; }
+
+/* .py-3 {
+  padding: 3rem 0; } */
+
+.text-center {
+  text-align: center; }
+
+#experience {
+  font-size: 7rem;
+  color: #614c18;
+  font-weight: bold;
+}
+
+#exp_desc {
+  font-family: "Baloo Da 2", serif;
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
 }
