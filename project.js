@@ -1,3 +1,38 @@
+
+document.addEventListener("DOMContentLoaded", function() {
+    const gallerySection = document.querySelector('.gallery-section');
+    const galleryGrid = document.getElementById('gallery-grid');
+    
+    // Get the project folder from the data-project attribute
+    const projectFolder = gallerySection.getAttribute('data-project');
+    const numberOfImages = gallerySection.getAttribute('image-count');
+    const extension = gallerySection.getAttribute('extension');
+   
+    // Dynamically generate image paths based on the project folder
+    const imagePaths = [];
+    for (let i = 1; i <= numberOfImages; i++) {
+        imagePaths.push(`images/${projectFolder}/${i}.${extension}`);
+    }
+
+    imagePaths.forEach(function(imagePath) {
+        // Create a div for each image
+        const galleryItem = document.createElement('div');
+        galleryItem.classList.add('gallery-item');
+        
+        // Create the image element
+        const img = document.createElement('img');
+        img.src = imagePath;
+        img.alt = 'Gallery Image';
+
+        // Append the image to the gallery item
+        galleryItem.appendChild(img);
+
+        // Append the gallery item to the gallery grid
+        galleryGrid.appendChild(galleryItem);
+    });
+});
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const galleryItems = document.querySelectorAll(".gallery-item img");
 
@@ -34,38 +69,4 @@ document.addEventListener("DOMContentLoaded", function() {
             document.body.removeChild(lightbox);
         });
     }
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    const gallerySection = document.querySelector('.gallery-section');
-    const galleryGrid = document.getElementById('gallery-grid');
-    
-    // Get the project folder from the data-project attribute
-    const projectFolder = gallerySection.getAttribute('data-project');
-    const numberOfImages = gallerySection.getAttribute('image-count');
-    const extension = gallerySection.getAttribute('extension');
-   
-    // Dynamically generate image paths based on the project folder
-    const imagePaths = [];
-    for (let i = 1; i <= numberOfImages; i++) {
-        imagePaths.push(`images/${projectFolder}/${i}.${extension}`);
-    }
-
-    imagePaths.forEach(function(imagePath) {
-        // Create a div for each image
-        const galleryItem = document.createElement('div');
-        galleryItem.classList.add('gallery-item');
-        
-        // Create the image element
-        const img = document.createElement('img');
-        img.src = imagePath;
-        img.alt = 'Gallery Image';
-
-        // Append the image to the gallery item
-        galleryItem.appendChild(img);
-
-        // Append the gallery item to the gallery grid
-        galleryGrid.appendChild(galleryItem);
-    });
 });
