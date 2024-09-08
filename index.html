@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Architect Website</title>
+    <title>Key Ratio Designs</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -37,12 +37,14 @@
       </div>
       <header class="header" id="home">
         <div class="img-wrapper">
+          <!-- <img src="images/bg.jpg" /> -->
           <img src="images/main_bg.jpg" />
         </div>
         <div class="banner">
           <h1>Key Ratio Designs</h1>
           <p>We Are Here To Help You For Designing Your Dreams..!!</p>
-          <button>Check Out Our Cool Designs</button>
+          <!-- <button>Check Out Our Cool Designs</button> -->
+          <button onclick="document.getElementById('projects').scrollIntoView()">Check Out Our Cool Designs</button>
         </div>
       </header>
 
@@ -177,6 +179,46 @@
             </div>
         </div>
     </section>
+
+    <section class="projects" id="projects">
+      <div class="slideshow-container">
+        <div class="section-header">
+          <h1 class="section-heading">Our Projects</h1>
+          <div class="underline"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+            <img src="images/khushi.JPG" class="project_img">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="images/reema.jpg" class="project_img">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="images/contact-bg.jpg" class="project_img">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+    </section>
+    
       <section class="team" id="team">
         <div class="section-header">
           <h1 class="section-heading">Our Team</h1>
@@ -185,6 +227,7 @@
         <div class="cards-wrapper">
           <div class="card" data-tilt>
             <div class="card-img-wrapper">
+              <!-- <img src="images/person-2.jpg" alt="Architect" /> -->
               <img src="images/khushi.JPG" alt="Architect" />
             </div>
             <div class="card-info">
@@ -274,5 +317,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="tilt.js"></script>
+    <script src="test.js"></script>
   </body>
 </html>
