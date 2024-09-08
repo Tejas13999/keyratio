@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Architect Website</title>
+    <title>Key Ratio Designs</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -42,7 +42,7 @@
         <div class="banner">
           <h1>Key Ratio Designs</h1>
           <p>We Are Here To Help You For Designing Your Dreams..!!</p>
-          <button>Check Out Our Cool Designs</button>
+          <button onclick="document.getElementById('projects').scrollIntoView()">Check Out Our Cool Designs</button>
         </div>
       </header>
 
@@ -57,12 +57,12 @@
             >
           </li>
           <li class="menu-item">
-            <a href="#team" class="menu-link" data-content="Team">Team</a>
+            <a href="#projects" class="menu-link" data-content="Projects"
+              >Projects</a
+            >
           </li>
           <li class="menu-item">
-            <a href="#pricing" class="menu-link" data-content="Pricing"
-              >Pricing</a
-            >
+            <a href="#team" class="menu-link" data-content="Team">Team</a>
           </li>
           <li class="menu-item">
             <a href="#contact" class="menu-link" data-content="Contact"
@@ -177,6 +177,70 @@
             </div>
         </div>
     </section>
+
+    <section class="projects" id="projects">
+      <div class="slideshow-container">
+        <div class="section-header">
+          <h1 class="section-heading">Our Projects</h1>
+          <div class="underline"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+            <img src="images/Projects Slideshow/project3.png" class="project_img">
+          <div class="text">
+            <h1>Contemporary Family Home</h1>
+          </div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="images/Projects Slideshow/project5.jpg" class="project_img">
+          <div class="text">
+            <h1>Luxurious Living Room</h1>
+          </div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="images/Projects Slideshow/project2.png" class="project_img">
+          <div class="text">
+            <h1>Classy Landscape Design</h1>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="images/Projects Slideshow/project4.png" class="project_img">
+          <div class="text">
+            <h1>Suits for Living Room</h1>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="images/Projects Slideshow/project1.jpeg" class="project_img">
+          <div class="text">
+            <h1>Stunning 2BHK House</h1>
+          </div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+        
+    </section>
+    
       <section class="team" id="team">
         <div class="section-header">
           <h1 class="section-heading">Our Team</h1>
@@ -274,5 +338,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="tilt.js"></script>
+    <script src="slideshow.js"></script>
   </body>
 </html>
