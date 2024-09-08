@@ -59,12 +59,12 @@
             >
           </li>
           <li class="menu-item">
-            <a href="#team" class="menu-link" data-content="Team">Team</a>
+            <a href="#projects" class="menu-link" data-content="Projects"
+              >Projects</a
+            >
           </li>
           <li class="menu-item">
-            <a href="#pricing" class="menu-link" data-content="Pricing"
-              >Pricing</a
-            >
+            <a href="#team" class="menu-link" data-content="Team">Team</a>
           </li>
           <li class="menu-item">
             <a href="#contact" class="menu-link" data-content="Contact"
@@ -180,29 +180,54 @@
         </div>
     </section>
 
-    <!-- <section class="projects" id="projects">
+
+    <!--  -->
+    <section class="projects" id="projects">
       <div class="slideshow-container">
+        
         <div class="section-header">
           <h1 class="section-heading">Our Projects</h1>
           <div class="underline"></div>
         </div>
 
-        <div class="mySlides fade">
+        <div class="mySlides fade" onclick="window.location.href='project1.html'">
           <div class="numbertext"></div>
-            <img src="images/khushi.JPG" class="project_img">
-          <div class="text">Caption Text</div>
+            <img src="images/Projects Slideshow/project1.jpeg" class="project_img">
+          <div class="text">
+            <h1>Contemporary Family Home</h1>
+          </div>
         </div>
         
-        <div class="mySlides fade">
+        <div class="mySlides fade" onclick="window.location.href='project2.html'">
           <div class="numbertext"></div>
-          <img src="images/reema.jpg" class="project_img">
-          <div class="text">Caption Two</div>
+          <img src="images/Projects Slideshow/project2.png" class="project_img">
+          <div class="text">
+            <h1>Luxurious Living Room</h1>
+          </div>
         </div>
         
-        <div class="mySlides fade">
+        <div class="mySlides fade" onclick="window.location.href='project3.html'">
           <div class="numbertext"></div>
-          <img src="images/contact-bg.jpg" class="project_img">
-          <div class="text">Caption Three</div>
+          <img src="images/Projects Slideshow/project3.png" class="project_img">
+          <div class="text">
+            <h1>Classy Landscape Design</h1>
+          </div>
+        </div>
+
+        <div class="mySlides fade" onclick="window.location.href='project4.html'">
+          <div class="numbertext"></div>
+          <img src="images/Projects Slideshow/project4.png" class="project_img">
+          <div class="text">
+            <h1>Suits for Living Room</h1>
+          </div>
+        </div>
+
+        <div class="mySlides fade" onclick="window.location.href='project5.html'">
+          <div class="numbertext"></div>
+          <img src="images/Projects Slideshow/project5.jpg" class="project_img">
+          <div class="text">
+            <h1>Stunning 2BHK House</h1>
+          </div>
         </div>
         
         <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -214,29 +239,15 @@
         <div style="text-align:center">
           <span class="dot" onclick="currentSlide(1)"></span> 
           <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
         </div>
         
-    </section> -->
+    </section>
     
-    <!-- Project Carousel Section -->
-    <section class="project-carousel">
-      <div class="carousel-container">
-          <div class="carousel-item" onclick="window.location.href='project1.html'">
-              <img src="images/contact-bg.jpg" alt="Project 1">
-              <h3>Project 1</h3>
-              <p>Modern Home Decor</p>
-          </div>
+    <!--  -->
 
-          <div class="carousel-item" onclick="window.location.href='project2.html'">
-              <img src="images/contact-bg.jpg" alt="Project 2">
-              <h3>Project 2</h3>
-              <p>Luxury Interior Design</p>
-          </div>
-
-          <!-- Add more project cards as needed -->
-      </div>
-  </section>
 
       <section class="team" id="team">
         <div class="section-header">
@@ -279,28 +290,35 @@
           <div class="contact-left"></div>
           <div class="contact-right">
             <h1 class="contact-heading">Contact</h1>
-            <form>
+            <form 
+              id="contact-form" 
+              action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf6UWpTYzRdD0FRTeidzcBtI2nniM6W4DJF2jnE1Lr2P61d5A/formResponse" 
+              method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+              
               <div class="input-group">
-                <input type="text" class="field" />
+                <input type="text" name="entry.659136195" class="field" required />
                 <label class="input-label">Full Name</label>
               </div>
               <div class="input-group">
-                <input type="text" class="field" />
+                <input type="text" name="entry.1766990332" class="field" required />
                 <label class="input-label">Mobile Number</label>
               </div>
               <div class="input-group">
-                <input type="email" class="field" />
+                <input type="email" name="entry.791145794" class="field" required />
                 <label class="input-label">Email</label>
               </div>
               <div class="input-group">
-                <textarea class="field"></textarea>
+                <textarea name="entry.802437983" class="field" required></textarea>
                 <label class="message">Message</label>
               </div>
               <input type="submit" class="submit-btn" value="Submit" />
             </form>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+            <p id="success-message" style="display:none;">Thank you for contacting us! We'll get back to you soon.</p>
           </div>
         </div>
       </section>
+      
 
       <footer class="footer">
         <div class="footer-content">
@@ -336,6 +354,51 @@
       crossorigin="anonymous"
     ></script>
     <script src="tilt.js"></script>
-    <script src="test.js"></script>
+    <script src="slideshow.js"></script>
+    <script>
+      let submitted = false;
+    
+      // Function to handle form submission
+      function formSubmit() {
+        if (submitted) {
+          // Show success message
+          document.getElementById('success-message').style.display = 'block';
+    
+          // Clear form after submission
+          document.getElementById('contact-form').reset();
+    
+          // Reset the 'submitted' flag to avoid multiple triggers
+          submitted = false;
+        }
+      }
+    
+      // Add event listener to run the formSubmit function after the form is submitted
+      document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+          // Delay clearing to ensure Google Forms receives the submission
+          setTimeout(formSubmit, 1000);
+        });
+      });
+
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+         event.preventDefault();
+
+          // Submit form data to Google Form (assuming you have this implemented)
+          // After successful submission:
+          document.getElementById('success-message').style.display = 'block';
+
+          // Clear the form
+          this.reset();
+
+          // Hide the success message after 5 seconds (5000 ms)
+          setTimeout(function() {
+            document.getElementById('success-message').style.display = 'none';
+          }, 5000); // 5000 milliseconds = 5 seconds
+       }
+      );
+
+    </script>
+    
+    
   </body>
 </html>
