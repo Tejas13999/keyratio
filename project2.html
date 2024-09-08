@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Project 2 - Modern Artistry</title>
-    <link rel="stylesheet" href="project2.css">
-</head>
-<body>
+    
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
     <header>
-        <h1>Modern Artistry Interior Design</h1>
+      <h1>Modern Artistry Interior Design</h1>
     </header>
 
     <div class="project-details">
-        <div class="project-image">
-            <img src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg" alt="Modern Living Room">
-        </div>
-        <div class="project-overview">
-            <h2>Project Overview</h2>
-            <ul>
-                <li><strong>Client:</strong> William Cooper</li>
-                <li><strong>Category:</strong> Modern Artistry</li>
-                <li><strong>Duration:</strong> 20 April - 28 September, 2023</li>
-                <li><strong>Budget:</strong> $8,000 - $12,000</li>
-                <li><strong>Preview:</strong> <a href="https://www.interrior.com">www.interrior.com</a></li>
-                <li><strong>Location:</strong> Albany, NY</li>
-            </ul>
-        </div>
+      <div class="project-image">
+        <img src="images/Projects Slideshow/project2.png" alt="Modern Living Room" />
+      </div>
+      <div class="project-overview">
+        <h2>Project Overview</h2>
+        <ul>
+          <li><strong>Client:</strong> William Cooper</li>
+          <li><strong>Category:</strong> Modern Artistry</li>
+          <li><strong>Duration:</strong> 20 April - 28 September, 2023</li>
+          <li><strong>Budget:</strong> $8,000 - $12,000</li>
+          <li>
+            <strong>Preview:</strong>
+            <a href="https://www.interrior.com">www.interrior.com</a>
+          </li>
+          <li><strong>Location:</strong> Albany, NY</li>
+        </ul>
+      </div>
     </div>
 
-    <section class="gallery-section">
-        <h2>Image Gallery</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/704982/pexels-photo-704982.jpeg" alt="Gallery Image 1">
-            </div>
-            <div class="gallery-item">
-                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="Gallery Image 2">
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg" alt="Gallery Image 3">
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg" alt="Gallery Image 4">
-            </div>
-        </div>
+    <!-- Image Gallery Section -->
+    <section class="gallery-section" data-project="project2" image-count="7" extension="png">
+      <h2>Image Gallery</h2>
+      <div class="gallery-grid" id="gallery-grid"></div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 keyratio. All Rights Reserved.</p>
-    </footer>
+    <footer class="footer"></footer>
+        <div class="footer-content">
+          <p class="copyright">
+            Ahmedabad, Gujarat
+            </br>
+            <b>Email: </b>studio.keyratiodesigns@gmail.com
+          </p>
+          <div class="social-list">
+            <a href="https://www.instagram.com/keyratio_designs?igsh=YTJibGI1dWs0Y2J4" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://wa.me/+918780287048?text=I'm%20interested%20in%20your%20designs"
+              target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="tel:8780287048" target="_blank"
+              ><i class="fa fa-phone"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
 
-    <script src="project1.js"></script>
-</body>
+      <script src="index.js"></script>
+      <script src="project.js"></script>
+    
+  </body>
 </html>
