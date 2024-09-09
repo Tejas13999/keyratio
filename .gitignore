@@ -1,0 +1,44 @@
+# Ignore system files
+.AppleDouble
+.LSOverride
+.Trash/
+.com.apple.timemachine.donotpresent
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.temp
+ehthumbs.db
+Thumbs.db
+
+# Ignore macOS application files
+.Applications/
+.DS_Store
+.UserPicture.jpg
+
+# Ignore Xcode files
+.xcodeproj/
+xcuserdata/
+DerivedData/
+Build/
+Pods/
+
+# Ignore other common files
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+package-lock.json
+.idea/
+.vscode/
+
+# Ignore common macOS directories
+Desktop/
+Documents/
+Downloads/
+Library/
+Movies/
+Music/
+Pictures/
+Public/
+Sites/

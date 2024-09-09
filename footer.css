@@ -1,0 +1,60 @@
+.footer {
+  width: 100%;
+  height: 15rem;
+  background-color: #17181b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer.footer {
+    height: 150px;
+}
+
+.footer-content {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+    font-family: "Baloo Da 2", serif;
+    font-size: 1rem;
+    color: #a7a7a7;
+}
+
+.social-list a {
+    margin: 0 1.5rem;
+}
+
+.social-list i {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #a7a7a7;
+}
+
+@media (max-width: 1500px) {
+  .footer-content {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+  }
+
+  .copyright {
+    order: 1;
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    height: 18rem;
+  }
+}
