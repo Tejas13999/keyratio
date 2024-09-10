@@ -709,6 +709,11 @@ html {
   font-size: 1.2rem;
 }
 
+.field:not(:placeholder-shown):valid ~ label {
+  transform: translateY(-3rem);
+  font-size: 1.2rem;
+}
+
 .submit-btn {
   width: 45rem;
   height: 5rem;
